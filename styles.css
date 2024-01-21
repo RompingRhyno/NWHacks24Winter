@@ -26,3 +26,31 @@ button:hover {
     align-items: center;
     justify-content: center;
 }
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 85% 15%;
+    grid-template-areas: "content content content content"
+    "home todo achievements settings";
+}
+
+.home {
+    grid-area: home;
+}
+
+.todo {
+    grid-area: todo;
+}
+
+.achievements {
+    grid-area: achievements;
+}
+
+.settings {
+    grid-area: settings;
+}
+
+.content {
+    grid-area: content;
+}

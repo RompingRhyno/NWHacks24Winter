@@ -1,6 +1,7 @@
 * { 
     margin: 0;
     padding: 0;
+    background-color: #cec2ae;
 }
 
 .title {
@@ -18,7 +19,7 @@ button {
 button:hover {
     background-image: linear-gradient(
         rgb(17, 0, 255),
-        rgb(238, 0, 255)
+        rgb(0, 110, 255)
     );
 }
 
@@ -38,6 +39,18 @@ button:hover {
     grid-area: home;
 }
 
+
+    /* .nav-link {
+        color: #e94445 !important;
+    }
+
+    .nav-pills {
+        --bs-nav-pills-link-active-bg: #e94445 !important;  
+        --bs-nav-pills-link-active-color: #cec2ae !important;
+    } */
+
+
+
 .todo {
     grid-area: todo;
 }
@@ -49,4 +62,3 @@ button:hover {
 .settings {
     grid-area: settings;
 }
-    

@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 .title {
     font-size: 50pt;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     align-self: center;
-}
+}   
 
 button {
     border-radius: 1rem;
@@ -27,12 +28,10 @@ button:hover {
     justify-content: center;
 }
 
-.gridContainer {
+#gridContainer {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 85% 15%;
-    grid-template-areas: "content content content content"
-    "home todo achievements settings";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'home todo achievements settings';
 }
 
 .home {
@@ -50,7 +49,4 @@ button:hover {
 .settings {
     grid-area: settings;
 }
-
-.content {
-    grid-area: content;
-}
+    

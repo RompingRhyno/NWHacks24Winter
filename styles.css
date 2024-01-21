@@ -1,14 +1,10 @@
 * { 
     margin: 0;
     padding: 0;
-    background-color: #cec2ae;
 }
 
 .title {
-    font-size: 50pt;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    align-self: center;
+    color: #4a2932 !important;
 }   
 
 button {
@@ -18,9 +14,17 @@ button {
 
 button:hover {
     background-image: linear-gradient(
-        rgb(17, 0, 255),
-        rgb(0, 110, 255)
+        #4a2932,
+        #a34c50
     );
+}
+
+.btn {
+    background-color: transparent;
+}
+
+.display{
+    color: #4a2932!important;
 }
 
 #btncontainer {
@@ -29,36 +33,14 @@ button:hover {
     justify-content: center;
 }
 
-#gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'home todo achievements settings';
+
+ .inactive {
+        color: #4a2932 !important;
 }
 
-.home {
-    grid-area: home;
-}
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #4a2932 !important;  
+    --bs-nav-pills-link-active-color: #cec2ae !important;
+    font-size: 30pt;
+} 
 
-
-    /* .nav-link {
-        color: #e94445 !important;
-    }
-
-    .nav-pills {
-        --bs-nav-pills-link-active-bg: #e94445 !important;  
-        --bs-nav-pills-link-active-color: #cec2ae !important;
-    } */
-
-
-
-.todo {
-    grid-area: todo;
-}
-
-.achievements {
-    grid-area: achievements;
-}
-
-.settings {
-    grid-area: settings;
-}

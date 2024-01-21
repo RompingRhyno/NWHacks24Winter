@@ -4,3 +4,21 @@
     justify-content: center;
     align-self: center;
 }
+
+button {
+    border-radius: 1rem;
+    transition: all 1s ease-in; 
+}
+
+button:hover {
+    background-image: linear-gradient(
+        rgb(17, 0, 255),
+        rgb(238, 0, 255)
+    );
+}
+
+#btncontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
